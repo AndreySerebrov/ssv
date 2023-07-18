@@ -1,0 +1,13 @@
+package core
+
+const (
+	PROPOSER = iota
+	ATTESTER
+	AGGREGATOR
+	SYNC_COMMITTEE
+	DUTY_NUMBER
+)
+
+var (
+	DutyList = []string{"PROPOSER", "ATTESTER", "AGGREGATOR", "SYNC_COMMITTEE"}
+)
