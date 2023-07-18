@@ -8,8 +8,7 @@ import (
 )
 
 type processor struct {
-	queue Queue
-	// chans map[int]map[int]chan queue.Task
+	queue        Queue
 	chans        map[int]map[string]chan string
 	work         Work
 	m            sync.Mutex
